@@ -1,0 +1,7 @@
+.gitignore
+fast_api
+fast_api.env
+venv/
+__pycache__/
+flask_api/venv/
+Curso de Python.code-workspace
