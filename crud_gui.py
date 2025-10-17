@@ -5,6 +5,7 @@ import requests
 # URL base del endpoint Flask (ajústala según tu entorno)
 API_URL = "http://127.0.0.1:5000/tipos-documento"
 
+
 class AppCRUD(tk.Tk):
     def __init__(self):
         super().__init__()
