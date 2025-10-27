@@ -1,11 +1,14 @@
-# Nombre de Archivo: funciones_decoradoras.py
-# Objetivo: Implementar y demostrar el uso de funciones decoradoras en Python.
-# Las funciones decoradoras son una característica poderosa en Python que permite modificar el comportamiento de una función sin cambiar su código.
-# Funciones Matemáticas Básicas en Python
-# Este archivo contiene funciones para realizar operaciones matemáticas básicas como suma, resta, multiplicación, división y potencia.
+"""
+Nombre de Archivo: funciones_decoradoras.py
+Objetivo: Implementar y demostrar el uso de funciones decoradoras en Python.
+Las funciones decoradoras son una característica poderosa en Python que permite modificar el comportamiento de una función sin cambiar su código.
+Funciones Matemáticas Básicas en Python
+Este archivo contiene funciones para realizar operaciones matemáticas básicas como suma, resta, multiplicación, división y potencia.
+"""
 
 
 def funciones_decoradoras(funcion):
+    """Decorador que imprime información antes y después de la ejecución de una función."""
     def envoltura(*args, **kwargs):
         print(f"Ejecutando la función '{funcion.__name__}' con argumentos {args} y {kwargs}")
         resultado = funcion(*args, **kwargs)
@@ -48,3 +51,6 @@ print(restar(10, 4))        # Salida: 6
 print(multiplicar(6, 7))    # Salida: 42
 print(dividir(20, 5))       # Salida: 4.0
 print(potencia(base=2, exponente=3))       # Salida: 8
+
+print(funciones_decoradoras.__doc__)  # Muestra la documentación de la función
+help(__name__)  # Muestra la documentación del archivo

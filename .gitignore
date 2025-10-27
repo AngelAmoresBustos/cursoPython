@@ -5,3 +5,5 @@ venv/
 __pycache__/
 flask_api/venv/
 Curso de Python.code-workspace
+dist/
+build/
